@@ -1,5 +1,11 @@
 {
     "files.associations": {
-        "queue": "cpp"
+        "queue": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp",
+        "vector": "cpp",
+        "algorithm": "cpp",
+        "utility": "cpp",
+        "iostream": "cpp"
     }
 }
