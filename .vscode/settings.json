@@ -6,6 +6,7 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "utility": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "valarray": "cpp"
     }
 }
