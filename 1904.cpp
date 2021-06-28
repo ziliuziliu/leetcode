@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cstdio>
+#include<cmath>
 #include<cstring>
 using namespace std;
 class Solution {
@@ -13,8 +14,7 @@ public:
         int h1 = atoi(startTime.substr(0, 2).c_str()), h2 = atoi(finishTime.substr(0, 2).c_str());
         int m1 = atoi(startTime.substr(3, 2).c_str()), m2 = atoi(finishTime.substr(3, 2).c_str());
         if (h1 == h2) {
-            int flag1 = (m1%15 == 0) ? 0 : 1;
-            if (m1 < m2) return m2/15 - m1/15 - flag1;
+            if (m1 < m2) return max(0, m2/15 - (int)ceil((double)m1/15));
             else if (m1 == m2) return 0;
             else return regular(h1, h2+24, m1, m2);
         }
